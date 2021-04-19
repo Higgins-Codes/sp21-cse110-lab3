@@ -1,0 +1,158 @@
+/* Styling sheet*/
+
+body {
+    background-color: darkgreen;
+}
+
+h1 {
+    color: rgb(157, 228, 77);
+    font-size: 3em;
+    margin: auto;
+}
+
+*.post-title {
+    text-align: center;
+}
+
+input[type="radio"] {
+    text-decoration: line-through;
+    color: aqua;
+}
+
+/* Conditional on type of screen */
+@media print and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+}
+
+div h1 {
+    text-decoration: wavy;
+    background-color: darkslategrey;
+    margin-bottom: 1ch;
+}
+
+fieldset > label {
+    text-align: center;
+    text-decoration: solid;
+}
+
+input + label {
+    text-align: center;
+    color: aquamarine;
+}
+
+ol ~ li{
+    color: cadetblue;
+}
+
+h2 {
+    color: hsl(100, 41%, 55%);
+    font-size: 2em;
+}
+
+p {
+    color: #FFF;
+    display: inline;
+}
+
+#normal {
+    color: #FFF;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: darkcyan;
+    margin-top: 100px;
+    margin-left: 1cm;
+}
+
+header {
+    color:#FFF;
+}
+
+li {
+    color: #FFF;
+}
+
+legend {
+    color: #FFF;
+}
+
+summary {
+    height: 5ch;
+    width: 50ch;
+}
+
+textarea {
+    max-width: fit-content;
+    min-width: none;
+    height: auto;
+    width: max-content;
+}
+
+footer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+div {
+    padding-top: 1%;
+    margin: 5% 2% 0% 2%;
+}
+
+.post {
+    background-color: darkolivegreen;
+    padding: 7% 7% 5% 5%;
+    border-style: groove;
+    border-color: aliceblue;
+    border-width: 0.3rem;
+    border-radius: 15px;
+    display: block;
+}
+
+div.post:hover {
+    transform: scale(1.01, 1.01);
+}
+
+button:active {
+    color: #FFF;
+    background-color: darkblue;
+}
+
+.template {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: details-3;
+}
+
+div.main-title {
+    background-color: darkslategray;
+    text-align: center;
+    position: sticky;
+    top: 10px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2196F3;
+    gap: 3px;
+    padding: 10px;
+  }
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: darkcyan;
+}
